@@ -44,7 +44,6 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   void _settle() async {
-    //print("settele ${foodListView.order}");
     var mark = foodListView.order.value.where((e) => e.widget == 'text');
     var goods = foodListView.order.value.where((e) => e.count > 0).toList();
     var printData = {
